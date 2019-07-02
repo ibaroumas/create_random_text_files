@@ -37,7 +37,7 @@ This is bash script that creates a hierarchy of random files and directories.
       i.dir_name/cc/dddd/f5
       j.dir_name/eee/f6
 
-Except the main part of the script, three helpful fuctions where created:
+**Except the main part of the script, three helpful fuctions where created:**
  
  1. RandomString(): Used to name the directories/files. In the script we have a global array, containing all numbers, capital and lower-case letters of the english alphabet. So this function, randomly picks a size for the name, and then randomly picks this many values from the global array for the actual name of file.
  2. RandomData(): Created a random string of size between 1kb and 128kb, again, using random values from the array descripted above.

@@ -5,8 +5,11 @@ This is bash script that creates a hierarchy of random files and directories.
 ./create_infiles.sh dir_name num_of_files num_of_dirs lev
 
 -dir_name: The directory that this hierarchy will be created at.
+
 -num_of_files: The total amount of files needed.
+
 -num_of_dirs: The total amount of directories needed.
+
 -levels: The amount of levels the directories will be distributed.
 
 **Use:**

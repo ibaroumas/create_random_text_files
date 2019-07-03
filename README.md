@@ -1,4 +1,4 @@
-This is bash script that creates a hierarchy of random files and directories.
+This is bash script that creates a hierarchy of random files and directories. It may be useful for testing applications, which include the exchange of data files and folders.
 
 **Execution command:**
 
@@ -10,7 +10,7 @@ This is bash script that creates a hierarchy of random files and directories.
 
 -num_of_dirs: The total amount of directories needed.
 
--levels: The amount of levels the directories will be distributed.
+-lev: The amount of levels the directories will be distributed.
 
 **Use:**
 
@@ -42,6 +42,6 @@ This is bash script that creates a hierarchy of random files and directories.
 
 **Except the main part of the script, three helpful fuctions where created:**
  
- 1. RandomString(): Used to name the directories/files. In the script we have a global array, containing all numbers, capital and lower-case letters of the english alphabet. So this function, randomly picks a size for the name, and then randomly picks this many values from the global array for the actual name of file.
+ 1. RandomString(): Used to name the directories/files. In the script we have a global array, containing all digits, capital and lower-case letters of the english alphabet. So this function, randomly picks a size for the name, and then randomly picks this many values from the global array for the actual name of file.
  2. RandomData(): Created a random string of size between 1kb and 128kb, again, using random values from the array descripted above.
  3. Files_in_Directories(): This is a recursive function that in a round-robin manner distributes files in the sub-directories of a folder provided.

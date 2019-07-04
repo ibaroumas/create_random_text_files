@@ -20,9 +20,13 @@ This is bash script that creates a hierarchy of random files and directories. It
 
     For examples if the num_of_dirs is 5 (ex. aaa, bbb, cc, dddd, eee), and lev is 2 then the hierarchy will look like this:
       a.dir_name/aaa/
+      
       b.dir_name/aaa/bbb
+      
       c.dir_name/cc/
+      
       d.dir_name/cc/dddd
+      
       e.dir_name/ee
       
  3. It creates num_of_files files, which are distributed in a round-robin manner at all directories. The names of the files are random alphanumeric values between 1 and 8 bytes. They contain random alphanumeric data between 1kb and 128kb.
@@ -30,14 +34,23 @@ This is bash script that creates a hierarchy of random files and directories. It
     For example if num_of_files is 10 and there is the hierarchy of files provided above then the distribution of files will look like this:
       
       a.dir_name/f1
+      
       b.dir_name/f7
+      
       c.dir_name/aaa/f2
+      
       d.dir_name/aaa/f8
+      
       e.dir_name/aaa/bbb/f3
+      
       f.dir_name/aaa/bbb/f9
+      
       g.dir_name/cc/f4
+      
       h.dir_name/cc/f10
+      
       i.dir_name/cc/dddd/f5
+      
       j.dir_name/eee/f6
 
 **Except the main part of the script, three helpful fuctions where created:**
